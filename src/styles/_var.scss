@@ -1,0 +1,44 @@
+// Cores
+
+$primary-color: #3498db;
+$infoBgColor: #faebd3;
+
+// Fontes
+
+@font-face {
+  font-family: 'Silent Landfield';
+  src: url('../../assets/fonts/Silent\ Landfield.ttf');
+}
+
+// Mixins
+
+@mixin text($size: 16px) {
+  font-size: $size;
+  line-height: $size + 15;
+}
+
+@mixin title($size: 28px) {
+  font-size: $size;
+  line-height: $size + 15;
+  font-family: 'Silent Landfield', sans-serif;
+}
+
+.text--small {
+  @include text(14px);
+}
+
+.text {
+  @include text();
+}
+
+.text--big {
+  @include text(20px);
+}
+
+.title {
+  @include title();
+}
+
+.title--big {
+  @include title(48px);
+}

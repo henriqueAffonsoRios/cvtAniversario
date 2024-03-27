@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BirthCard</title>
+  <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <main class="cardBirth">
+    <div class="cardBirth__container" data-aos="fade-right">
+      <div class="cardBirth__card">
+        <h1 class="title--big">Convite de Aniversário</h1>
+        <p class="text">Você está convidado para comemorar meu aniversário!</p>
+        <p class="text">Venha celebrar conosco e compartilhar momentos incríveis em <span class="contador" id="contador"></span></p>
+        <div class="infosBar">
+          <ul class="infosBar__infos">
+            <li class="infosBar__infos__item text--small">
+              <b class="text--big">Localização</b>
+              Rua Python Dev N°SASS, Bairro HTML5 CSS3
+            </li>
+            <li class="infosBar__infos__item text--small">
+              <b class="text--big">Data</b>
+              20/05/2024
+            </li>
+            <li class="infosBar__infos__item text--small">
+              <b class="text--big">Horário</b>
+              às 20:00
+            </li>
+          </ul>
+          <button class="infosBar__btn">Confirmar Presença</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
